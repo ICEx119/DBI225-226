@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAAN PAI MAI Cafe & Booking</title>
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-white text-stone-800 font-sans">
+
+    <nav class="fixed w-full z-50 bg-[oklch(95.4%_0.038_75.164)]/80 backdrop-blur-md border-b border-stone-200">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="text-2xl font-black tracking-tighter text-[oklch(47.6%_0.114_61.907)]">BAAN PAI MAI</div>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#" class="hover:text-stone-500">HOME</a>
+                <a href="#menu" class="hover:text-stone-500">MENU</a>
+                <a href="#location" class="hover:text-stone-500">MAP</a>
+                <a href="#booking" class="bg-[oklch(47.6%_0.114_61.907)] text-white px-5 py-2 rounded-full hover:brightness-110 transition-all shadow-md">CAR BOOKING</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative h-[85vh] flex items-center justify-center">
+        <div class="absolute inset-0 z-0">
+            <img src="img/cover.jpg" class="w-full h-full object-cover brightness-75">
+        </div>
+        <div class="relative z-10 text-center text-white px-4">
+            <h1 class="text-6xl md:text-8xl font-black mb-4 drop-shadow-lg">BAAN PAI MAI</h1>
+            <p class="text-xl md:text-2xl mb-8 font-light tracking-widest">DRIFT & DRIP EXPERIENCE</p>
+            <a href="#booking" class="bg-white text-stone-900 px-10 py-4 rounded-full font-bold hover:bg-[oklch(47.6%_0.114_61.907)] hover:text-white transition-all shadow-xl inline-block">BOOK NOW</a>
+        </div>
+    </header>
+
+    <section id="menu" class="py-24 px-6 max-w-7xl mx-auto bg-white rounded-[3rem] my-10 shadow-sm">
+        <h2 class="text-4xl font-bold text-center mb-16 text-stone-900">Signature Menu</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="group cursor-pointer">
+                <div class="overflow-hidden rounded-2xl mb-6 shadow-sm ring-1 ring-stone-100">
+                    <img src="img/coffee.avif" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700">
+                </div>
+                <h3 class="text-xl font-bold text-stone-800">Signature Drip</h3>
+                <p class="text-stone-400 text-sm">Light-Medium Roast / Refreshing Notes</p>
+                <p class="text-[oklch(47.6%_0.114_61.907)] font-bold text-xl mt-2">120.-</p>
+            </div>
+            
+            <div class="group cursor-pointer">
+                <div class="overflow-hidden rounded-2xl mb-6 shadow-sm ring-1 ring-stone-100">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1000" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700">
+                </div>
+                <h3 class="text-xl font-bold text-stone-800">Jeep Dirty</h3>
+                <p class="text-stone-400 text-sm">Cold Milk / Strong Espresso Shot</p>
+                <p class="text-[oklch(47.6%_0.114_61.907)] font-bold text-xl mt-2">135.-</p>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="overflow-hidden rounded-2xl mb-6 shadow-sm ring-1 ring-stone-100">
+                    <img src="https://images.unsplash.com/photo-1559496417-e7f25cb247f3?q=80&w=1000" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700">
+                </div>
+                <h3 class="text-xl font-bold text-stone-800">Black Orange</h3>
+                <p class="text-stone-400 text-sm">Fresh Orange / Coffee Craft</p>
+                <p class="text-[oklch(47.6%_0.114_61.907)] font-bold text-xl mt-2">110.-</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="bg-[oklch(47.6%_0.114_61.907)] py-24 px-6 text-white rounded-[3rem] mx-4 md:mx-10 overflow-hidden shadow-2xl">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+            <div class="md:w-1/2">
+                
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 mt-2 italic">LOCATION</h2>
+                <p class="text-orange-50 mb-8 leading-relaxed font-light">
+                    แวะมาสัมผัสบรรยากาศแคมป์ปิ้งและรถจี๊ปคลาสสิกริมเขื่อนอุบลรัตน์ <br>
+                    เราพร้อมต้อนรับคุณด้วยกาแฟดริปที่ทำด้วยใจทุกวันครับ
+                </p>
+                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-3xl border border-white/20 shadow-inner">
+                    <p class="font-bold text-xl mb-2">📍 บ้านภูคำเบ้า</p>
+                    <p class="text-orange-100 leading-relaxed text-sm">69 หมู่ที่ 7 หาดโนนทัน ถ.ริมเขื่อนอุบลรัตน์<br>อ.อุบลรัตน์ จ.ขอนแก่น 40250</p>
+                </div>
+            </div>
+            <div class="md:w-1/2 w-full h-[450px] rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white/5">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.5746766492648!2d102.6278993!3d16.7324567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDQzJzU2LjkiTiAxMDLCsDM3JzQwLjQiRQ!5e0!3m2!1sth!2sth!4v1615880000000!5m2!1sth!2sth" 
+                    class="w-full h-full border-0 opacity-90" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="py-24 px-6">
+        <div class="max-w-3xl mx-auto bg-white rounded-[3rem] p-12 shadow-sm ring-1 ring-stone-100">
+            <h2 class="text-3xl font-bold text-center mb-4 text-stone-900">จองรอบนั่งรถจี๊ป</h2>
+            <p class="text-center text-stone-400 mb-12 font-light italic">Experience the ultimate coffee trip</p>
+            
+            <form class="space-y-10">
+                <div>
+                    <label class="block font-medium mb-4 text-stone-500">1. เลือกวันที่จอง</label>
+                    <input type="date" class="w-full p-5 rounded-2xl bg-stone-50 border-none ring-1 ring-stone-100 focus:ring-2 focus:ring-[oklch(47.6%_0.114_61.907)] outline-none transition-all">
+                </div>
+
+                <div>
+                    <label class="block font-medium mb-4 text-stone-500">2. เลือกรอบเวลา</label>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <button type="button" class="py-4 rounded-2xl border border-stone-100 hover:bg-[oklch(47.6%_0.114_61.907)] hover:text-white font-medium transition-all shadow-sm">08:00 น.</button>
+                        <button type="button" class="py-4 rounded-2xl border border-stone-100 hover:bg-[oklch(47.6%_0.114_61.907)] hover:text-white font-medium transition-all shadow-sm">10:00 น.</button>
+                        <button type="button" class="py-4 rounded-2xl bg-stone-50 text-stone-300 border border-stone-50 cursor-not-allowed font-medium" disabled>13:00 (เต็ม)</button>
+                        <button type="button" class="py-4 rounded-2xl border border-stone-100 hover:bg-[oklch(47.6%_0.114_61.907)] hover:text-white font-medium transition-all shadow-sm">15:00 น.</button>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block font-medium mb-4 text-stone-500">3. ข้อมูลติดต่อ</label>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <input type="text" placeholder="ชื่อเล่น/ชื่อจริง" class="p-5 rounded-2xl bg-stone-50 ring-1 ring-stone-100 focus:ring-2 focus:ring-[oklch(47.6%_0.114_61.907)] outline-none">
+                        <input type="tel" placeholder="เบอร์โทรศัพท์" class="p-5 rounded-2xl bg-stone-50 ring-1 ring-stone-100 focus:ring-2 focus:ring-[oklch(47.6%_0.114_61.907)] outline-none">
+                    </div>
+                </div>
+
+                <button type="submit" class="w-full bg-[oklch(47.6%_0.114_61.907)] text-white py-6 rounded-2xl font-bold text-xl hover:brightness-110 shadow-lg shadow-orange-900/10 transition-all active:scale-[0.98]">
+                    CONFIRM BOOKING
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-16 text-center">
+        <div class="text-[oklch(47.6%_0.114_61.907)] font-black text-xl mb-4 tracking-tighter">บ้านปายไม้</div>
+        <p class="text-stone-400 text-sm font-light">© 2024 Ban Plai Mai Cafe</p>
+    </footer>
+
+</body>
+</html>
